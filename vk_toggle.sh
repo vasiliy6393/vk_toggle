@@ -72,7 +72,7 @@ if grep -Pq '^[0-9 hрmьsы]+$' <<< "$WAIT_TIME" ; then
     if grep -Piq 'firefox' <<< $(ps aux); then
         WAIT="0";
         # переключаем браузер на передний план
-        xdotool search --onlyvisible --class "Firefox" | xargs -L1 --no-run-if-empty \
+        xdotool search --desktop 0 --onlyvisible --class "Firefox" | xargs -L1 --no-run-if-empty \
                                                          xdotool windowactivate;
     else
         # если браузер не запущен
