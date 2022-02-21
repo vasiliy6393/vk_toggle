@@ -1,0 +1,12 @@
+# vk_toggle
+# AUTHOR: Vasiliy Pogoreliy, vasiliy@pogoreliy.tk 
+
+# Dependences:
+# Xorg, coreutils, xdotool, bc, xclip, zenity, firefox (or modify on your browser)
+
+# INSTALL
+sudo chmod a+x ./vk_toggle.sh;
+sudo cp ./vk_toggle.sh /bin; # or /usr/bin or other
+
+# For convenience, tie the command to the shortkeys
+# Probably have to change the coordinates for the mouse click.
